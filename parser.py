@@ -14,12 +14,12 @@ text = ""
 
 while count < num_pages:
     pageObj = pdfReader.getPage(count)
-    count +=1
+    count += 1
     text += pageObj.extractText()
 
 
 
-text_list =text.split(' ')
+text_list = text.split(' ')
 
 for idx, entry in enumerate(text_list):
 	if('Bebauungsplan' in entry):
